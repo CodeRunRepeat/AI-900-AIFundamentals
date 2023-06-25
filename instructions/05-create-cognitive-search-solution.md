@@ -211,7 +211,7 @@ Use the Search explorer to write and test queries. Search explorer is a tool bui
     > **Note**
     > If a **To search in the portal, please allow the portal origin in your index CORS settings** message appears, select **Allow portal**, and then select **Search**.
 
-1. Now let's filter by location. Enter `search=$filter=locations eq 'Chicago'` in the **Query string** field, and then select **Search**. The query searches all the documents in the  index and filters for reviews with a Chicago location.
+1. Now let's filter by location. Enter `search=*&$filter=locations/any(loc: loc eq 'Chicago')` in the **Query string** field, and then select **Search**. The query searches all the documents in the  index and filters for reviews with a Chicago location.
 
 1. Now let's filter by sentiment. Enter `search=$filter=sentiment eq 'negative'` in the **Query string** field, and then select **Search**. The query searches all the documents in the index and filters for reviews with a negative sentiment.
 
